@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>APIs</h1>
+    <form>
+        <input type="number" id="number" placeholder="Enter a number" max="100" min="1">
+        <button type="button" onclick="mnop()">Submit</button>
+    </form>
+    <p id="xyz"></p>
+    <script>
+        function mnop() {
+            var mno = document.getElementById("number");
+            if (!mno.checkValidity()) {
+                alert("Please enter a valid number between 1 and 100.");
+                return;
+            } else {
+                alert("Valid number entered: " + mno.value);
+            }
+        }
+    </script>
+</body>
+</html>
